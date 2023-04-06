@@ -10,14 +10,16 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         />
+        <script src="./JS/loading.js"></script>
         <script defer src="./JS/index.js"></script>
         <title>TÊN APP</title>
     </head>
-    <body>
-        <div id="loader" class="absolute w-full h-screen bg-primary">
-            <div
-                class="absolute top-1/4 right-1/2 translate-x-1/2 flex flex-col items-center gap-5"
-            >
+    <body class="bg-primary">
+        <div
+            id="loader"
+            class="fixed w-full h-screen bg-primary flex flex-col justify-center items-center z-50"
+        >
+            <div class="flex flex-col items-center gap-5">
                 <img src="Images/loading.gif" class="w-10" alt="" />
                 <div
                     class="w-56 text-center text-2xl text-gray-400 font-semibold"
@@ -28,45 +30,43 @@
             <img
                 src="./Logo/LogoApp.png"
                 alt=""
-                class="w-44 absolute bottom-1/4 translate-y-1/2 right-1/2 translate-x-3/4"
+                class="w-44 translate-y-1/2 translate-x-1/4"
             />
         </div>
         <main
-            class="min-h-screen h-auto bg-primary flex justify-center items-center"
+            class="h-screen bg-primary flex gap-5 flex-col justify-end items-center"
         >
-            <section>
-                <header class="flex flex-col items-center">
-                    <img src="./Images/welcome.png" alt="" class="w-3/4 mb-9" />
-                    <h1 class="text-4xl text-white font-semibold">TÊN APP</h1>
-                </header>
-                <div class="flex flex-col gap-2 items-center">
-                    <p
-                        class="w-80 font-semibold text-2xl text-blue-500 text-center"
-                    >
-                        Choose your language to start
-                    </p>
-                    <a
-                        href="#VN"
-                        class="w-4/5 bg-blue-800 rounded-md text-2xl text-center text-white font-semibold p-2 focus-within:bg-blue-400 transition-colors"
-                        data-language
-                    >
-                        Tiếng Việt
+            <header class="flex flex-col items-center">
+                <img src="./Images/welcome.png" alt="" class="w-56 h-60 mb-9" />
+                <h1 class="text-4xl text-white font-semibold">TÊN APP</h1>
+            </header>
+            <section class="h-2/5 flex flex-col gap-2 items-center">
+                <p
+                    class="max-w-xs font-semibold text-2xl text-blue-500 text-center"
+                >
+                    Choose your language to start
+                </p>
+                <a
+                    href="#VN"
+                    class="w-4/5 bg-blue-800 rounded-md text-2xl text-center text-white font-semibold p-2 focus:bg-blue-400 transition-colors"
+                    data-language
+                >
+                    Tiếng Việt
+                </a>
+                <a
+                    href="#EN"
+                    class="w-4/5 bg-blue-800 rounded-md text-2xl text-center text-white font-semibold p-2 focus:bg-blue-400 transition-colors"
+                    data-language
+                >
+                    English
+                </a>
+                <div class="w-4/5 text-2xl text-right">
+                    <a href="#" id="rout-to">
+                        <i
+                            class="text-gray-500 text-blue-400 transition-colors fa-solid fa-chevron-right"
+                        >
+                        </i>
                     </a>
-                    <a
-                        href="#US"
-                        class="w-4/5 bg-blue-800 rounded-md text-2xl text-center text-white font-semibold p-2 focus-within:bg-blue-400 transition-colors"
-                        data-language
-                    >
-                        English
-                    </a>
-                    <div class="w-4/5 text-2xl text-right">
-                        <a href="#" id="rout-to">
-                            <i
-                                class="text-blue-800 text-blue-400 transition-colors fa-solid fa-chevron-right"
-                            >
-                            </i>
-                        </a>
-                    </div>
                 </div>
             </section>
         </main>

@@ -1,21 +1,13 @@
 "use strict";
-setTimeout(removeLoader, 2500);
-function removeLoader() {
-    const loader = document.getElementById("loader");
-    if (loader)
-        document.body.removeChild(loader);
-}
-const languageElements = document.querySelectorAll("[data-language]");
-languageElements.forEach((element) => {
-    element.addEventListener("click", (event) => routingLanguage(event));
-});
-function routingLanguage(e) {
-    const languageElement = e.target;
-    const language = languageElement
-        ?.getAttribute("href")
-        ?.replace("#", "");
+location.hash = "";
+window.addEventListener("hashchange", routingLanguage);
+function routingLanguage() {
+    const hash = window.location.hash;
+    if (hash == "#" || hash == "")
+        return;
+    const language = hash.replace("#", "");
     const routTo = document.getElementById("rout-to");
+    const routToIcon = routTo?.getElementsByTagName("i")[0];
+    routToIcon?.classList.remove("text-gray-500");
     routTo?.setAttribute("href", `./${language}/auth.html`);
-    const routToCharacter = routTo?.getElementsByTagName("i")[0];
-    routToCharacter?.classList.remove("text-blue-800");
 }

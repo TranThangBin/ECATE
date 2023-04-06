@@ -9,9 +9,6 @@ module.exports = {
                 tertiary: "#2171B5",
                 quanternary: "#06BEE1",
             },
-            width: {
-                fullX4: "400%",
-            },
         },
     },
     plugins: [],

@@ -1,26 +1,13 @@
-setTimeout(removeLoader, 2500);
+location.hash = "";
 
-function removeLoader(): void {
-    const loader: HTMLElement | null = document.getElementById("loader");
-    if (loader) document.body.removeChild(loader);
-}
+window.addEventListener("hashchange", routingLanguage);
 
-const languageElements: NodeListOf<Element> =
-    document.querySelectorAll("[data-language]");
-languageElements.forEach((element: Element) => {
-    element.addEventListener("click", (event: Event) =>
-        routingLanguage(event as MouseEvent)
-    );
-});
-
-function routingLanguage(e: MouseEvent) {
-    const languageElement: HTMLElement | null = e.target as HTMLElement | null;
-    const language: string | null | undefined = languageElement
-        ?.getAttribute("href")
-        ?.replace("#", "");
-    const routTo: HTMLElement | null = document.getElementById("rout-to");
+function routingLanguage(): void {
+    const hash: string = window.location.hash;
+    if (hash == "#" || hash == "") return;
+    const language: string = hash.replace("#", "");
+    const routTo = document.getElementById("rout-to");
+    const routToIcon = routTo?.getElementsByTagName("i")[0];
+    routToIcon?.classList.remove("text-gray-500");
     routTo?.setAttribute("href", `./${language}/auth.html`);
-    const routToCharacter: HTMLElement | undefined =
-        routTo?.getElementsByTagName("i")[0];
-    routToCharacter?.classList.remove("text-blue-800");
 }
