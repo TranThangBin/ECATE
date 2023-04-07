@@ -9,6 +9,14 @@ module.exports = {
                 tertiary: "#2171B5",
                 quanternary: "#06BEE1",
             },
+            spacing: {
+                state_1: "20%",
+                state_2: "5%",
+            },
+            height: {
+                around: "12.5%",
+                center: "75%",
+            },
         },
     },
     plugins: [],

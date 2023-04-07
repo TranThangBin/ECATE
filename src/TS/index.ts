@@ -1,5 +1,5 @@
 location.hash = "";
-
+routingLanguage();
 window.addEventListener("hashchange", routingLanguage);
 
 function routingLanguage(): void {
