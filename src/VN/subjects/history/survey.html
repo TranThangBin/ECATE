@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../../CSS/style.css" />
+        <link rel="icon" href="../../../Logo/LogoApp.png" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <script src="../../../JS/loading.js"></script>
+        <title>TÊN APP</title>
+    </head>
+    <body class="bg-primary">
+        <div
+            id="loader"
+            class="fixed w-full h-screen bg-primary flex flex-col justify-center items-center z-50"
+        >
+            <div class="flex flex-col items-center gap-5">
+                <img src="../../../Images/loading.gif" class="w-10" alt="" />
+                <div
+                    class="w-56 text-center text-2xl text-gray-400 font-semibold"
+                >
+                    ĐANG KHỞI TẠO KHÓA HỌC...
+                </div>
+                <p class="text-white text-2xl text-center max-w-[18rem]">
+                    Sẵn sàng tham gia cùng 2 triệu người đang học lịch sử nào!
+                </p>
+            </div>
+            <img
+                src="../../../Logo/LogoApp.png"
+                alt=""
+                class="w-44 translate-y-8 translate-x-1/4"
+            />
+        </div>
+        <main class="h-screen overflow-hidden">
+            <section class="h-full" id="begin">
+                <section class="h-around bg-secondary"></section>
+                <section
+                    class="h-center bg-primary flex flex-col overflow-y-scroll"
+                >
+                    <section class="flex flex-col items-center">
+                        <div class="w-4/5 my-4 text-2xl text-left">
+                            <a href="javascript:history.back()">
+                                <i
+                                    class="text-white transition-colors fa-solid fa-chevron-left"
+                                >
+                                </i>
+                            </a>
+                        </div>
+                        <img
+                            src="../../../Images/WhichGrade.png"
+                            alt=""
+                            class="h-32"
+                        />
+                        <section
+                            class="w-full flex flex-col items-center gap-4 my-4 text-white text-3xl font-semibold"
+                        >
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Lớp 1
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Lớp 2
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Lớp 3
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Lớp 4
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Lớp 5
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Lớp 6
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Lớp 7
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Lớp 8
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Lớp 9
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Lớp 10
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Lớp 11
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Lớp 12
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Đại học
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Đi làm
+                            </button>
+                        </section>
+                    </section>
+                </section>
+                <section
+                    class="h-around bg-primary border-t border-t-blue-300 flex justify-center items-center"
+                >
+                    <a
+                        href="#exp"
+                        class="w-5/6 p-3 text-center rounded-xl text-blue-600 bg-blue-700"
+                    >
+                        TIẾP TỤC
+                    </a>
+                </section>
+            </section>
+            <section class="h-full" id="exp">
+                <section class="h-around bg-secondary"></section>
+                <section
+                    class="h-center bg-primary flex flex-col overflow-y-scroll"
+                >
+                    <section class="flex flex-col items-center">
+                        <div class="w-4/5 my-4 text-2xl text-left">
+                            <a href="#begin">
+                                <i
+                                    class="text-white transition-colors fa-solid fa-chevron-left"
+                                >
+                                </i>
+                            </a>
+                        </div>
+                        <img
+                            src="../../../Images/Knowledge.png"
+                            alt=""
+                            class="h-32"
+                        />
+                        <section
+                            class="w-full flex flex-col items-center gap-4 my-4 text-white text-2xl font-semibold"
+                        >
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Chưa biết gì
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Đã và đang học
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Am hiểu khá nhiều
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Là chuyên gia hoặc cao hơn
+                            </button>
+                        </section>
+                    </section>
+                </section>
+                <section
+                    class="h-around bg-primary border-t border-t-blue-300 flex justify-center items-center"
+                >
+                    <a
+                        href="#why"
+                        class="w-5/6 p-3 text-center rounded-xl text-blue-600 bg-blue-700"
+                    >
+                        TIẾP TỤC
+                    </a>
+                </section>
+            </section>
+            <section class="h-full" id="why">
+                <section class="h-around bg-secondary"></section>
+                <section
+                    class="h-center bg-primary flex flex-col overflow-y-scroll"
+                >
+                    <section class="flex flex-col items-center">
+                        <div class="w-4/5 my-4 text-2xl text-left">
+                            <a href="#exp">
+                                <i
+                                    class="text-white transition-colors fa-solid fa-chevron-left"
+                                >
+                                </i>
+                            </a>
+                        </div>
+                        <img
+                            src="../../../Images/Why.png"
+                            alt=""
+                            class="h-32"
+                        />
+                        <section
+                            class="w-full flex flex-col items-center gap-4 my-4 text-white text-2xl font-semibold"
+                        >
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Củng cố kiến thứ
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Để kiểm tra và thi
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Tìm hiểu thêm về sử
+                            </button>
+                        </section>
+                    </section>
+                </section>
+                <section
+                    class="h-around bg-primary border-t border-t-blue-300 flex justify-center items-center"
+                >
+                    <a
+                        href="#goal"
+                        class="w-5/6 p-3 text-center rounded-xl text-blue-600 bg-blue-700"
+                    >
+                        TIẾP TỤC
+                    </a>
+                </section>
+            </section>
+            <section class="h-full" id="goal">
+                <section class="h-around bg-secondary"></section>
+                <section
+                    class="h-center bg-primary flex flex-col overflow-y-scroll"
+                >
+                    <section class="flex flex-col items-center">
+                        <div class="w-4/5 my-4 text-2xl text-left">
+                            <a href="#why">
+                                <i
+                                    class="text-white transition-colors fa-solid fa-chevron-left"
+                                >
+                                </i>
+                            </a>
+                        </div>
+                        <img
+                            src="../../../Images/Goal.png"
+                            alt=""
+                            class="h-32"
+                        />
+                        <section
+                            class="w-full flex flex-col items-center gap-4 my-4 text-white text-2xl font-semibold"
+                        >
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                5 phút / ngày
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                10 phút / ngày
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                15 phút / ngày
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-center border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                20 phút / ngày
+                            </button>
+                        </section>
+                    </section>
+                </section>
+                <section
+                    class="h-around bg-primary border-t border-t-blue-300 flex justify-center items-center"
+                >
+                    <a
+                        href="#notify"
+                        class="w-5/6 p-3 text-center rounded-xl text-blue-600 bg-blue-700"
+                    >
+                        TIẾP TỤC
+                    </a>
+                </section>
+            </section>
+            <section class="h-full" id="notify">
+                <section class="h-around bg-secondary"></section>
+                <section
+                    class="h-center bg-primary flex flex-col overflow-y-scroll"
+                >
+                    <section class="flex flex-col items-center">
+                        <div class="w-4/5 my-4 text-2xl text-left">
+                            <a href="#why">
+                                <i
+                                    class="text-white transition-colors fa-solid fa-chevron-left"
+                                >
+                                </i>
+                            </a>
+                        </div>
+                        <img
+                            src="../../../Images/Notify.png"
+                            alt=""
+                            class="h-32"
+                        />
+                        <section
+                            class="grid grid-rows-2 grid-cols-2 w-5/6 h-36 text-blue-500 border border-blue-500 bg-blue-700 rounded-xl"
+                        >
+                            <p
+                                class="w-full h-full col-span-2 border-b border-blue-500 flex justify-center items-center"
+                            >
+                                Tên app muốn gửi thông báo cho bạn
+                            </p>
+                            <button
+                                class="border-r border-blue-500 focus:text-blue-300"
+                            >
+                                Không cho phép
+                            </button>
+                            <button class="focus:text-blue-300">
+                                Cho phép
+                            </button>
+                        </section>
+                    </section>
+                </section>
+                <section
+                    class="h-around bg-primary border-t border-t-blue-300 flex justify-center items-center"
+                >
+                    <a
+                        href="#get-started"
+                        class="w-5/6 p-3 text-center rounded-xl text-blue-600 bg-blue-700"
+                    >
+                        TIẾP TỤC
+                    </a>
+                </section>
+            </section>
+            <section class="h-full" id="get-started">
+                <section class="h-around bg-secondary"></section>
+                <section
+                    class="h-center bg-primary flex flex-col overflow-y-scroll"
+                >
+                    <section class="flex flex-col items-center">
+                        <div class="w-4/5 my-4 text-2xl text-left">
+                            <a href="#notify">
+                                <i
+                                    class="text-white transition-colors fa-solid fa-chevron-left"
+                                >
+                                </i>
+                            </a>
+                        </div>
+                        <img
+                            src="../../../Images/GetStarted.png"
+                            alt=""
+                            class="h-32"
+                        />
+                        <section
+                            class="w-full flex flex-col items-center gap-4 my-4 text-white text-lg font-semibold"
+                        >
+                            <button
+                                class="w-5/6 p-3 text-left border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Bắt đầu từ kiến thức cơ bản
+                                <p class="text-md font-thin">
+                                    Bắt đầu từ kiến thức dễ nhất
+                                </p>
+                            </button>
+                            <button
+                                class="w-5/6 p-3 text-left border border-white rounded-xl focus:bg-blue-400 focus:border-blue-400 transition-colors"
+                            >
+                                Tìm điểm bắt đầu
+                                <p class="text-md font-thin">
+                                    Làm kiểm tra để bỏ qua những kiến thức cơ
+                                    bản
+                                </p>
+                            </button>
+                        </section>
+                    </section>
+                </section>
+                <section
+                    class="h-around bg-primary border-t border-t-blue-300 flex justify-center items-center"
+                >
+                    <a
+                        href="./skilltest.html"
+                        class="w-5/6 p-3 text-center rounded-xl text-blue-600 bg-blue-700"
+                    >
+                        TIẾP TỤC
+                    </a>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>
