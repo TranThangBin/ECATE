@@ -10,12 +10,13 @@ module.exports = {
                 quanternary: "#06BEE1",
             },
             spacing: {
-                state_1: "20%",
+                state_1: "15%",
                 state_2: "5%",
                 auth_navigtion: "var(--auth-navigation)",
             },
             width: {
                 full4X: "400%",
+                progress: "var(--progress)",
             },
             height: {
                 around: "12.5%",
