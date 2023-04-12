@@ -1,4 +1,3 @@
-location.hash = "";
 routingLanguage();
 window.addEventListener("hashchange", routingLanguage);
 

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../CSS/style.css" />
+        <link rel="icon" href="../Logo/LogoApp.png" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <script defer src="../JS/loading.js"></script>
+        <script defer src="../JS/auth.js"></script>
+        <script defer src="../JS/home.js"></script>
+        <title>ECATE</title>
+    </head>
+    <body class="bg-primary h-screen">
+        <div
+            id="loader"
+            class="fixed w-full h-screen bg-primary flex flex-col justify-center items-center z-50"
+        >
+            <div class="flex flex-col items-center gap-5">
+                <img src="../Images/loading.gif" class="w-10" alt="" />
+                <div
+                    class="w-56 text-center text-2xl text-gray-400 font-semibold"
+                >
+                    ĐANG MỞ KHÓA HỌC...
+                </div>
+                <p class="text-white text-2xl text-center max-w-[18rem]">
+                    Dành một ít phút trong ngày dùng ECATE để cải thiện kiến
+                    thức
+                </p>
+            </div>
+            <img
+                src="../Logo/LogoApp.png"
+                alt=""
+                class="w-44 translate-y-1/2 translate-x-1/4"
+            />
+        </div>
+        <header
+            class="fixed top-0 w-full h-[10%] flex justify-center items-center text-xl font-bold text-white"
+        >
+            ECATE
+        </header>
+        <main
+            class="fixed top-[10%] w-full h-[75%] overflow-y-hidden text-white"
+        >
+            <section
+                id="home"
+                class="h-full flex flex-col items-center overflow-y-scroll gap-5"
+            >
+                <div class="w-4/5 flex justify-between">
+                    <div class="w-2/3 font-semibold">
+                        <div
+                            class="text-xl w-12 h-12 bg-blue-400 rounded-full flex justify-center items-center"
+                        >
+                            A
+                        </div>
+                        <span>Xin chào!</span>
+                        <h1 class="text-2xl">Nguyễn Văn A</h1>
+                    </div>
+                    <div class="w-1/3 flex">
+                        <img
+                            src="../Images/heart.png"
+                            alt=""
+                            class="w-5 h-5"
+                        />&nbsp;5
+                        <img
+                            src="../Images/coin.png"
+                            alt=""
+                            class="w-5 h-5 ml-auto"
+                        />&nbsp;0
+                    </div>
+                </div>
+                <div
+                    class="w-full bg-secondary rounded-t-3xl flex flex-col items-center gap-5"
+                >
+                    <div
+                        class="w-full h-52 grid grid-rows-2 grid-cols-3 place-items-center text-center"
+                    >
+                        <a
+                            href="./inDev.html"
+                            class="flex flex-col items-center"
+                        >
+                            <img
+                                class="w-12 h-12"
+                                src="../Images/lecture.png"
+                                alt=""
+                            />
+                            Bài giảng
+                        </a>
+                        <a
+                            href="./inDev.html"
+                            class="flex flex-col items-center"
+                        >
+                            <img
+                                class="w-12 h-12"
+                                src="../Images/achivement.png"
+                                alt=""
+                            />
+                            Thành tích
+                        </a>
+                        <a
+                            href="./inDev.html"
+                            class="flex flex-col items-center"
+                        >
+                            <img
+                                class="w-12 h-12"
+                                src="../Images/forum.png"
+                                alt=""
+                            />
+                            Diễn đàn
+                        </a>
+                        <a
+                            href="./inDev.html"
+                            class="flex flex-col items-center"
+                        >
+                            <img
+                                class="w-12 h-12"
+                                src="../Images/review.png"
+                                alt=""
+                            />
+                            Ôn tập
+                        </a>
+                        <a
+                            href="./inDev.html"
+                            class="flex flex-col items-center"
+                        >
+                            <img
+                                class="w-12 h-12"
+                                src="../Images/tourney.png"
+                                alt=""
+                            />
+                            Giải đấu
+                        </a>
+                        <a
+                            href="./inDev.html"
+                            class="flex flex-col items-center"
+                        >
+                            <img
+                                class="w-12 h-12"
+                                src="../Images/friends.png"
+                                alt=""
+                            />
+                            Bạn bè
+                        </a>
+                    </div>
+                    <a
+                        href="./inDev.html"
+                        class="w-10/12 flex bg-[#5875EB] py-3 rounded-3xl items-center text-center"
+                    >
+                        <img
+                            class="w-40 h-24"
+                            src="../Images/tutor.png"
+                            alt=""
+                        />
+                        <div>
+                            <h1 class="font-bold">ĐĂNG KÝ GIA SƯ</h1>
+                            <p>Dễ dàng nhanh chóng qua ECATE</p>
+                        </div>
+                    </a>
+                    <a
+                        href="./inDev.html"
+                        class="w-10/12 flex bg-[#5875EB] py-3 rounded-3xl items-center text-center mb-5"
+                    >
+                        <img
+                            class="w-40 h-36"
+                            src="../Images/membership.png"
+                            alt=""
+                        />
+                        <div>
+                            <h1 class="font-bold">ĐĂNG KÝ THÀNH VIÊN</h1>
+                            <p>Nâng tầm trải nghiệm</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section id="test" class="h-full overflow-y-scroll gap-5"></section>
+            <section
+                id="notification"
+                class="h-full flex flex-col items-center overflow-y-scroll"
+            >
+                <h1
+                    class="w-full text-center text-xl font-bold border-b border-secondary"
+                >
+                    THÔNG BÁO
+                </h1>
+                <div
+                    class="w-full py-2 border-b border-secondary flex flex-col"
+                >
+                    <span class="mx-5 font-semibold text-secondary"
+                        >Hôm qua</span
+                    >
+                    <div class="flex gap-2 items-center">
+                        <img
+                            src="../Images/icon.png"
+                            alt=""
+                            class="mx-5 w-10 h-10"
+                        />Bạn đã hoàn thành chương 1, phần 1
+                    </div>
+                </div>
+                <div
+                    class="w-full py-2 border-b border-secondary flex flex-col gap-2"
+                >
+                    <span class="mx-5 font-semibold text-secondary"
+                        >Tuần này</span
+                    >
+                    <div class="flex gap-2 items-center">
+                        <img
+                            src="../Images/icon.png"
+                            alt=""
+                            class="mx-5 w-10 h-10"
+                        />Chào! là Ecate đây Đừng lãng phí thời gian nữa, hay
+                        tham gia lớp học ngay đi nào!
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img
+                            src="../Images/icon.png"
+                            alt=""
+                            class="mx-5 w-10 h-10"
+                        />Đã tham gia thành công vào lớp học, hãy cùng Ecate
+                        chinh phục kiến thức nào
+                    </div>
+                </div>
+            </section>
+            <section
+                id="personal"
+                class="h-full flex flex-col items-center overflow-y-scroll gap-5"
+            >
+                <div class="w-4/5 flex gap-9 items-center">
+                    <div
+                        class="text-4xl w-24 h-24 bg-blue-400 rounded-full flex justify-center items-center"
+                    >
+                        A
+                    </div>
+                    <div class="flex flex-col">
+                        <h1 class="text-2xl font-bold">Nguyễn Văn A</h1>
+                        <span class="text-secondary">ID: A.3945123756</span>
+                        <span class="text-secondary">Tham gia: 4/4/2023</span>
+                    </div>
+                </div>
+                <div
+                    class="w-10/12 flex gap-5 flex-col items-center font-semibold text-2xl"
+                >
+                    <a
+                        href="./inDev.html"
+                        class="w-full flex border border-[#5875EB] p-3 rounded-3xl items-center text-center"
+                    >
+                        <img
+                            class="w-8 h-10"
+                            src="../Images/bookmark.png"
+                            alt=""
+                        />
+                        <span class="mx-auto">Kho lưu trữ</span>
+                    </a>
+                    <a
+                        href="./inDev.html"
+                        class="w-full flex border border-[#5875EB] p-3 rounded-3xl items-center text-center"
+                    >
+                        <img
+                            class="w-8 h-10"
+                            src="../Images/medal.png"
+                            alt=""
+                        />
+                        <span class="mx-auto">Thành tích của bạn</span>
+                    </a>
+                    <a
+                        href="./inDev.html"
+                        class="w-full flex border border-[#5875EB] p-3 rounded-3xl items-center text-center"
+                    >
+                        <img
+                            class="w-10 h-10"
+                            src="../Images/book.png"
+                            alt=""
+                        />
+                        <span class="mx-auto">Khóa học</span>
+                    </a>
+                    <a
+                        href="./inDev.html"
+                        class="w-full flex border border-[#5875EB] p-3 rounded-3xl items-center text-center"
+                    >
+                        <img
+                            class="w-10 h-10"
+                            src="../Images/friendlist.png"
+                            alt=""
+                        />
+                        <span class="mx-auto">Bạn bè</span>
+                    </a>
+                    <a
+                        href="./inDev.html"
+                        class="w-full flex border border-[#5875EB] p-3 rounded-3xl items-center text-center"
+                    >
+                        <img
+                            class="w-10 h-10"
+                            src="../Images/settings.png"
+                            alt=""
+                        />
+                        <span class="mx-auto">Cài đặt riêng tư</span>
+                    </a>
+                    <a
+                        href="./inDev.html"
+                        class="flex bg-[#5875EB] py-3 rounded-3xl items-center text-center mb-5"
+                    >
+                        <div>
+                            <h1 class="font-bold">Gói hội viên</h1>
+                            <p class="ml-1 text-base font-thin text-left">
+                                Nâng tầm với gói nâng cao chỉ 110.000VNĐ
+                            </p>
+                        </div>
+                        <img
+                            class="w-36 h-36"
+                            src="../Images/membersale.png"
+                            alt=""
+                        />
+                    </a>
+                </div>
+            </section>
+        </main>
+        <nav class="fixed bottom-0 w-full h-[15%] bg-secondary">
+            <ul class="h-full grid grid-cols-4 text-primary text-center">
+                <li class="flex">
+                    <a
+                        data-toSection
+                        href="#home"
+                        class="flex flex-col justify-center grow transition-colors text-white border-t-4 border-t-blue-300"
+                    >
+                        <i class="text-4xl fa-solid fa-house"></i>
+                        <div>Trang chủ</div></a
+                    >
+                </li>
+                <li class="flex">
+                    <a
+                        data-toSection
+                        href="./inDev.html"
+                        class="flex flex-col justify-center grow transition-colors border-t-4 border-t-transparent"
+                    >
+                        <i class="text-4xl fa-solid fa-file-lines"></i>
+                        Kiểm tra
+                    </a>
+                </li>
+                <li class="flex">
+                    <a
+                        data-toSection
+                        href="#notification"
+                        class="flex flex-col justify-center grow transition-colors border-t-4 border-t-transparent"
+                    >
+                        <i class="text-4xl fa-solid fa-bell"></i>
+                        Thông báo
+                    </a>
+                </li>
+                <li class="flex">
+                    <a
+                        data-toSection
+                        href="#personal"
+                        class="flex flex-col justify-center grow transition-colors border-t-4 border-t-transparent"
+                    >
+                        <i class="text-4xl fa-solid fa-user"></i>
+                        Cá nhân
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>

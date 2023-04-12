@@ -11,7 +11,7 @@ module.exports = {
             },
             spacing: {
                 state_1: "15%",
-                state_2: "5%",
+                state_2: "2.5%",
                 auth_navigtion: "var(--auth-navigation)",
             },
             width: {

@@ -1,5 +1,4 @@
 "use strict";
-location.hash = "";
 navigate();
 window.addEventListener("hashchange", navigate);
 function navigate() {

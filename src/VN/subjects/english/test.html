@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../../CSS/style.css" />
+        <link rel="icon" href="../../../Logo/LogoApp.png" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <script defer src="../../../JS/loading.js"></script>
+        <script defer src="../../../JS/quiz.js"></script>
+        <title>ECATE</title>
+    </head>
+    <body class="bg-primary">
+        <div
+            id="loader"
+            class="fixed w-full h-screen bg-primary flex flex-col justify-center items-center z-50"
+        >
+            <div class="flex flex-col items-center gap-5">
+                <img src="../../../Images/loading.gif" class="w-10" alt="" />
+                <div
+                    class="w-56 text-center text-2xl text-gray-400 font-semibold"
+                >
+                    ĐANG CHUẨN BỊ BÀI KIỂM TRA...
+                </div>
+                <p class="text-white text-2xl text-center max-w-[18rem]">
+                    Tập quản lý thời gian để cải thiện việc học
+                </p>
+            </div>
+            <img
+                src="../../../Logo/LogoApp.png"
+                alt=""
+                class="w-44 translate-y-8 translate-x-1/4"
+            />
+        </div>
+        <main class="h-screen">
+            <section class="h-[10%] flex justify-center items-end">
+                <div class="w-3/4 h-3 bg-blue-700 rounded-full -translate-y-1">
+                    <div
+                        id="progress"
+                        class="w-progress h-3 bg-blue-300 rounded-full transition-all"
+                    ></div>
+                </div>
+            </section>
+            <section
+                class="flex flex-col items-center h-[80%] overflow-y-scroll"
+            >
+                <h1 class="w-5/6 my-4 text-2xl text-white font-semibold">
+                    Chọn câu trả lời đúng
+                </h1>
+                <h2 id="question" class="w-5/6 text-lg text-white">
+                    Hội nghị Ianta (1945) có sự tham gia của các nước nào?
+                </h2>
+                <div
+                    id="answer-container"
+                    class="w-5/6 my-4 flex flex-col gap-4"
+                >
+                    <button
+                        class="p-3 bg-transparent transition-colors text-left text-lg text-white border border-white rounded-lg"
+                    >
+                        A. Anh - Pháp - Mỹ
+                    </button>
+                    <button
+                        class="p-3 bg-transparent transition-colors text-left text-lg text-white border border-white rounded-lg"
+                    >
+                        B. Anh - Mỹ - Liên Xô
+                    </button>
+                    <button
+                        class="p-3 bg-transparent transition-colors text-left text-lg text-white border border-white rounded-lg"
+                    >
+                        C. Anh - Pháp - Đức
+                    </button>
+                    <button
+                        class="p-3 bg-transparent transition-colors text-left text-lg text-white border border-white rounded-lg"
+                    >
+                        D. Mỹ - Liên Xô - Trung Quốc
+                    </button>
+                </div>
+            </section>
+            <section class="h-[10%] flex gap-3 justify-center items-start">
+                <button
+                    id="skip"
+                    class="p-1 text-center rounded-xl text-blue-600 border-2 border-blue-700"
+                >
+                    Bỏ qua
+                </button>
+                <button
+                    id="check-answer"
+                    class="w-2/3 p-1 text-center rounded-xl text-blue-600 bg-blue-700 transition-colors"
+                >
+                    Kiểm tra đáp án
+                </button>
+            </section>
+        </main>
+        <div
+            id="correct-panel"
+            class="w-full h-1/4 fixed -bottom-1/4 transition-all bg-secondary rounded-t-xl flex flex-col gap-2 justify-center items-center"
+        >
+            <div class="w-5/6 flex gap-4">
+                <img src="../../../Images/correct.png" alt="" class="w-9 h-9" />
+                <span class="text-2xl text-green-500 font-semibold">
+                    Chính xác!
+                </span>
+            </div>
+            <button
+                data-continue
+                class="w-5/6 p-3 text-white bg-blue-400 text-2xl rounded-full font-semibold"
+            >
+                Tiếp tục
+            </button>
+            <div class="w-5/6 text-right text-blue-400">
+                <button>Xem giải thích</button>
+            </div>
+        </div>
+        <div
+            id="incorrect-panel"
+            class="w-full h-1/4 fixed -bottom-1/4 transition-all bg-secondary rounded-t-xl flex flex-col gap-2 justify-center items-center"
+        >
+            <div class="w-5/6 flex gap-4">
+                <img
+                    src="../../../Images/incorrect.png"
+                    alt=""
+                    class="w-9 h-9"
+                />
+                <span class="text-2xl text-red-500 font-semibold">
+                    Sai đáp án!
+                </span>
+            </div>
+            <button
+                data-continue
+                class="w-5/6 p-3 text-white bg-blue-400 text-2xl rounded-full font-semibold"
+            >
+                Tiếp tục
+            </button>
+            <div class="w-5/6 text-right text-blue-400">
+                <button>Xem giải thích</button>
+            </div>
+        </div>
+        <div
+            id="result"
+            class="fixed right-full bottom-0 transition-all w-screen h-screen bg-primary flex flex-col justify-center items-center text-center gap-5 font-semibold"
+        >
+            <img
+                src="../../../Images/FinishTesting.png"
+                alt=""
+                class="w-32 h-56"
+            />
+            <h1 class="w-2/3 text-4xl text-yellow-400">
+                Bài kiểm tra hoàn tất!
+            </h1>
+            <div class="w-full flex justify-evenly text-primary font-semibold">
+                <div
+                    class="w-36 h-20 rounded-xl bg-yellow-400 flex flex-col items-center"
+                >
+                    Kinh nghiệm
+                    <div
+                        class="bg-primary w-11/12 h-3/5 rounded-xl flex justify-center items-center text-yellow-400"
+                    >
+                        <img
+                            src="../../../Images/exp.png"
+                            alt=""
+                            class="w-5 h-5"
+                        />
+                        &nbsp;1
+                    </div>
+                </div>
+                <div
+                    class="w-36 h-20 rounded-xl bg-blue-400 flex flex-col items-center"
+                >
+                    Thời gian
+                    <div
+                        class="bg-primary w-11/12 h-3/5 rounded-xl flex justify-center items-center text-blue-400"
+                    >
+                        <img
+                            src="../../../Images/clock.png"
+                            alt=""
+                            class="w-5 h-5"
+                        />
+                        &nbsp;<span id="timer"></span>
+                    </div>
+                </div>
+            </div>
+            <button
+                id="goto-finish"
+                class="w-5/6 p-3 text-white bg-blue-400 text-2xl rounded-full font-semibold"
+            >
+                Tiếp tục
+            </button>
+        </div>
+        <div
+            id="finish"
+            class="fixed left-full bottom-0 transition-all w-screen h-screen bg-secondary flex flex-col justify-center items-center text-center gap-5 font-semibold"
+        >
+            <h1 class="text-4xl text-yellow-400">Chúc mừng!</h1>
+            <h2 class="w-11/12 text-3xl text-white">
+                Bạn đã hoàn thành bài kiểm tra
+            </h2>
+            <p class="w-11/12 text-2xl text-white font-thin">
+                Kiến thức bạn khá tốt, ta sẽ bắt đầu từ level 5
+            </p>
+            <img src="../../../Logo/LogoApp.png" alt="" class="w-44 h-48" />
+            <div
+                id="starting-at"
+                class="w-full text-white text-xl flex justify-evenly"
+            >
+                <button
+                    class="w-36 h-14 bg-gray-400 transition-colors rounded-xl flex justify-center items-center"
+                >
+                    Đổi mốc bắt đầu
+                </button>
+                <button
+                    class="w-36 h-14 bg-gray-400 transition-colors rounded-xl flex justify-center items-center"
+                >
+                    Đồng ý
+                </button>
+            </div>
+            <div class="w-4/5 text-2xl text-right">
+                <a id="to-home" href="#">
+                    <i
+                        class="text-gray-500 text-blue-400 transition-colors fa-solid fa-chevron-right"
+                    >
+                    </i>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

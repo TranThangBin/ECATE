@@ -1,4 +1,3 @@
-location.hash = "";
 navigate();
 window.addEventListener("hashchange", navigate);
 
