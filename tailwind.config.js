@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./src/**/*.{html,js}"],
+    content: ["./docs/**/*.{html,js}"],
     theme: {
         extend: {
             colors: {
@@ -19,6 +19,7 @@ module.exports = {
                 progress: "var(--progress)",
             },
             height: {
+                screen: "100dvh",
                 around: "12.5%",
                 center: "75%",
             },

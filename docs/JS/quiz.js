@@ -24,6 +24,8 @@ const questionsCollection = [
     },
 ];
 let quizIndex;
+let exp;
+const expContainer = document.getElementById("exp");
 const answerContainer = document.getElementById("answer-container");
 const answers = answerContainer?.getElementsByTagName("button");
 const questionContainer = document.getElementById("question");
@@ -34,6 +36,7 @@ const continueButtons = document.querySelectorAll("[data-continue]");
 const progressBar = document.getElementById("progress");
 initializeQuiz();
 function initializeQuiz() {
+    exp = 0;
     resetState();
     if (!answers)
         return;
@@ -77,8 +80,12 @@ function checkAnswerClicked() {
     if (!answerChose)
         return;
     const correctAnswer = questionsCollection[quizIndex].ca;
-    if (answerChose[0] == correctAnswer)
+    if (answerChose[0] == correctAnswer) {
         correctPanel?.classList.replace("-bottom-1/4", "bottom-0");
+        exp++;
+        if (expContainer)
+            expContainer.innerText = exp.toString();
+    }
     else
         incorrectPanel?.classList.replace("-bottom-1/4", "bottom-0");
     const progress = ((quizIndex + 1) / questionsCollection.length) * 100;
